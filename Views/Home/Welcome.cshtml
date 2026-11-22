@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Take control of your money";
+}
+<div class="row align-items-center g-5 py-4 py-lg-5">
+  <div class="col-lg-6">
+    <span class="badge rounded-pill text-bg-success mb-3">Your money, made clearer</span>
+    <h1 class="display-4 fw-bold" style="color:#14213d">Spend with purpose. <span class="text-success">Save with confidence.</span></h1>
+    <p class="lead text-secondary my-4">A simple place to track income, understand monthly expenses, and build healthier money habits.</p>
+    <div class="d-flex gap-2 flex-wrap">
+      <a class="btn btn-success btn-lg px-4" asp-controller="Account" asp-action="Register">Get started <i class="bi bi-arrow-right ms-1"></i></a>
+      <a class="btn btn-outline-secondary btn-lg px-4" asp-controller="Account" asp-action="Login">I already have an account</a>
+    </div>
+    <p class="small text-secondary mt-3"><i class="bi bi-shield-check me-1"></i>Your financial entries are private to your account.</p>
+  </div>
+  <div class="col-lg-6">
+    <div class="card border-0 shadow-lg rounded-4 p-3 p-md-4">
+      <div class="d-flex justify-content-between align-items-center"><div><div class="text-secondary small">Monthly overview</div><h3 class="fw-bold mb-0">Your finances at a glance</h3></div><i class="bi bi-graph-up-arrow fs-2 text-success"></i></div>
+      <div class="row g-3 mt-2">
+        <div class="col-6"><div class="bg-success bg-opacity-10 rounded-3 p-3"><div class="small text-secondary">Income</div><div class="h4 fw-bold text-success mb-0">Track it</div></div></div>
+        <div class="col-6"><div class="bg-danger bg-opacity-10 rounded-3 p-3"><div class="small text-secondary">Expenses</div><div class="h4 fw-bold text-danger mb-0">Understand it</div></div></div>
+        <div class="col-12"><div class="bg-light rounded-3 p-4"><div class="d-flex justify-content-between"><span class="fw-semibold">Build better habits</span><i class="bi bi-stars text-warning"></i></div><p class="text-secondary small mb-0 mt-2">Record transactions, organize categories and review your spending over time.</p></div></div>
+      </div>
+    </div>
+  </div>
+</div>
